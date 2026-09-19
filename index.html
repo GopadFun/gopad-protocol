@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gopad on Robinhood Chain</title>
+  <meta name="description" content="Gopad lives on Robinhood Chain. One register holds every outside fact, each marked stated, absent or unconfirmed, plus a checker that tests any 0x string against it.">
+  <meta property="og:site_name" content="Gopad">
+  <meta property="og:title" content="Gopad on Robinhood Chain">
+  <meta property="og:description" content="A register of what holds up and what does not, plus a checker for 0x strings.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gopad.fun/">
+  <meta property="og:image" content="https://gopad.fun/assets/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gopad on Robinhood Chain">
+  <meta name="twitter:image" content="https://gopad.fun/assets/banner.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="src/tokens.css">
+  <link rel="stylesheet" href="src/site.css">
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <header class="top" data-hook="top">
+    <div class="top-row">
+      <p class="chain-chip" data-hook="chain">Robinhood Chain</p>
+      <div class="social" data-hook="social">
+        <span class="icon-btn" data-hook="social-x" data-inert="true" role="img" aria-label="X handle still under review" title="X handle still under review">
+          <span class="glow" aria-hidden="true"></span>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </span>
+      </div>
+    </div>
+    <div class="ca" data-hook="ca" data-state="absent">
+      <span class="ca-label">Contract</span>
+      <button class="ca-btn" type="button" data-hook="ca-copy" disabled aria-disabled="true">
+        <span class="ca-value" data-hook="ca-value">Not published</span>
+        <span class="ca-hint" data-hook="ca-hint"></span>
+      </button>
+      <span class="sr-only" role="status" aria-live="polite" data-hook="ca-live"></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="scene" data-hook="scene">
+      <div class="star-field" data-hook="stars" aria-hidden="true"></div>
+      <div class="hero">
+        <div class="mark">
+          <img class="mark-img" src="assets/logo-160.png" srcset="assets/logo-160.png 1x, assets/logo-512.png 3x" width="80" height="80" alt="Lime letter G, the Gopad mark">
+          <h1 class="mark-title">Gopad</h1>
+        </div>
+        <form class="checker" data-hook="checker" novalidate autocomplete="off">
+          <label class="pill">
+            <span class="sr-only">0x string to test</span>
+            <input class="pill-input" type="text" inputmode="text" spellcheck="false" autocapitalize="off" autocorrect="off" data-hook="input" placeholder="paste a 0x string">
+          </label>
+          <div class="btn-row">
+            <button class="btn-hero" type="submit" data-hook="run">Run check</button>
+          </div>
+          <p class="note">Paste any 0x string. Judgement comes from the register below, never from looks alone.</p>
+          <div class="verdict" data-hook="verdict" data-verdict="idle" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="register" id="register" data-hook="register">
+      <div class="register-in">
+        <header class="register-head">
+          <h2 class="register-title">The <span class="accent">register</span></h2>
+          <p class="register-sub">Every outside fact Gopad leans on, one row each. <span data-hook="count-line"></span></p>
+        </header>
+        <div class="tiles" data-hook="tiles"></div>
+        <ul class="rows" data-hook="rows"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Gopad · Robinhood Chain · gopad.fun</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* tokens.css : the ONLY file allowed to hold colour literals (favicon.svg excepted, gate-checked against this file).
+   Provenance: every hex below is a real pixel of a brand file. k-means centroids are snapped to the nearest actual
+   pixel; the cited (x,y) is that pixel. `python scripts/assets.py --verify` re-reads each one. Nothing here is invented. */
+:root {
+  --c-lime: #b6e914; /* brand/LOGO GOPAD PNG...png @ x=1016,y=573 ; k-means k=3 on opaque logo pixels, largest cluster */
+  --c-void: #06090e; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=672,y=267 ; k-means k=8 (every 3rd px), cluster 3, n=21444 */
+  --c-slate: #2e3d50; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=1082,y=329 ; k-means k=8 (every 3rd px), cluster 2, n=2429 */
+  --c-snow: #eff2f7; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=827,y=304 ; k-means k=8 (every 3rd px), cluster 6, n=577 */
+  --c-sky-deep: #398ec5; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=586,y=50 ; k-means k=8 (every 3rd px), cluster 4, n=13984 */
+  --c-sky-mid: #599dca; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=866,y=132 ; k-means k=8 (every 3rd px), cluster 7, n=13758 */
+  --c-sky-pale: #7dabc5; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=655,y=144 ; k-means k=8 (every 3rd px), cluster 5, n=13383 */
+  --c-haze: #a4b3ba; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=561,y=286 ; k-means k=8 (every 3rd px), cluster 1, n=10891 */
+  --c-ink: #ffffff; /* reference/SAMPUL GOPAD JPG.jpg.jpeg @ x=663,y=132 ; brightest pixel inside wordmark box x630-870 y120-190 */
+
+  /* layout + motion tokens (measured off the reference) */
+  --tap-min: 44px;
+  --ease: cubic-bezier(.4, 0, .2, 1);   /* reference default easing */
+  --t-fast: 150ms;                       /* reference default duration (buttons) */
+  --t-mid: 300ms;                        /* icon hover scale */
+  --t-slow: 500ms;                       /* glow fade */
+}

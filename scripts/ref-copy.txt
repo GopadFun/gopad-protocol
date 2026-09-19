@@ -1,0 +1,52 @@
+TypePad - Just type it
+Bring your idea to life with a simple word and a click on TypePad.
+Type it :
+Your token idea
+Create & Launch
+Just type it. Bring your idea to life with a simple word and a click on Type Pad.
+pairs with
+Launch it
+Make another
+Creating your token…
+In queue
+Launching…
+Wait
+Next launch available in
+You're in line — launches are processed one at a time. Hang tight.
+TypePad tokens are launched with ETH pair by default, if the stock is mentioned TypePad auto pair to it.
+Token live
+Based Bot
+AXIOM
+Explorer
+Robin Hood Explorer
+Token address, click to copy
+Follow us on X
+See tokens already launched
+Copied
+Copy token address
+Already launched
+launched
+tokens created so far
+Loading launches…
+Loading…
+No tokens launched yet.
+Previous
+Next
+Launched tokens
+Turning your idea into a token…
+artwork ready
+Preparing your launch on pons…
+Simulating and sending the launch…
+Transaction confirmed
+Launched in block, paired with. Gas paid
+Your launch slot expired. Please try again.
+Type pad logo
+Wallet balance fee
+You're in the launch queue — holding your place…
+lazy cat that refuses to sell
+doge
+robin hood cash
+cat
+trump car
+dog with a jetpack
+type a stock next to your idea for auto pair

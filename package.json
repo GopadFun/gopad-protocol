@@ -1,0 +1,14 @@
+{
+  "name": "gopad",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Gopad on Robinhood Chain",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "assets": "python scripts/assets.py",
+    "gates": "node scripts/build.mjs && node scripts/gates.mjs --dist",
+    "gates:src": "node scripts/gates.mjs"
+  }
+}
